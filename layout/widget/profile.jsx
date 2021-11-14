@@ -55,14 +55,14 @@ class Profile extends Component {
                             </a>
                         </div>
                     </div>
-                    <div class="level-item has-text-centered is-marginless">
+                    <a class="level-item has-text-centered is-marginless" href={counter.category.url}>
                         <div>
                             <p class="heading">{counter.category.title}</p>
-                            <a href={counter.category.url}>
+                            <div>
                                 <p class="title">{counter.category.count}</p>
-                            </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="level-item has-text-centered is-marginless">
                         <div>
                             <p class="heading">{counter.tag.title}</p>
