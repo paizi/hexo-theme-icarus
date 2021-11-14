@@ -40,8 +40,6 @@ module.exports = class extends Component {
                 <Footer config={config} helper={helper} />
                 <Scripts site={site} config={config} helper={helper} page={page} />
                 <Search config={config} helper={helper} />
-
-                <script type="text/javascript" src="/js/universe.js"></script>
             </body>
         </html>;
     }

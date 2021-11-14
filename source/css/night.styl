@@ -24,21 +24,6 @@ night()
     #night-nav #night-icon:before
         content: '\f0eb'
 
-    // global background
-    #universe
-        background: radial-gradient(1600px at 70% 120%, #212750 10%, #020409 100%)
-        display: block
-        position: fixed
-        margin: 0
-        padding: 0
-        border: 0
-        outline: 0
-        left: 0
-        top: 0
-        width: 100%
-        height: 100%
-        pointer-events: none
-
     // global brightness
     img, video, iframe, .waifu, .donate
         filter: brightness(0.8)
@@ -58,8 +43,7 @@ night()
         &:focus
             color: #ffffff
             background-color: dark-primary-color
-    .navbar,
-    .card
+    .navbar, .navbar-menu, .card, .footer
         background-color: rgba(40,44,52,0.5)
         backdrop-filter: none
         -webkit-backdrop-filter: none

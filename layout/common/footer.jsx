@@ -34,11 +34,8 @@ class Footer extends Component {
             <div class="container">
                 <div class="level">
                     <div class="level-start">
-                        <a class="footer-logo is-block mb-2" href={siteUrl}>
-                            {footerLogo}
-                        </a>
-                        <p class="is-size-7">
-                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
+                        <p class="is-size-6">
+                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} blw.moe` }}></span>
                             &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
                             <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                             {showVisitorCounter ? <br /> : null}
