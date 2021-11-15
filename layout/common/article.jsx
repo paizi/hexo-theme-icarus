@@ -96,8 +96,8 @@ module.exports = class extends Component {
                     {/* Content/Excerpt */}
                     <div class="content" dangerouslySetInnerHTML={{ __html: index && page.excerpt ? page.excerpt : page.content }}></div>
                     {/* Licensing block */}
-                    {!index && article && article.licenses && Object.keys(article.licenses)
-                        ? <ArticleLicensing.Cacheable page={page} config={config} helper={helper} /> : null}
+                    {!index && !page.hide_license && article && Object.keys(article.licenses)
+                        ? <ArticleLicensing.Cacheable page={page} config={{article: {licenses: {"署名—非商业性使用—相同方式共享 4.0 协议": {"icon": "fab fa-creative-commons", "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans"}, ' CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans'}}}} helper={helper} /> : null}
                     {/* Tags */}
                     {!index && page.tags && page.tags.length ? <div class="article-tags is-size-7 mb-4">
                         <span class="mr-2">#</span>
